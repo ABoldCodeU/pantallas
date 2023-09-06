@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AxitHome.Views.Pages.HomePage"
+             Title="HomePage"
+             xmlns:controls="clr-namespace:AxitHome.Views.Controls"
+             xmlns:helpers="clr-namespace:AxitHome.Helpers"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             BackgroundColor="{StaticResource Gray50}">
+    <Grid HorizontalOptions="Fill" VerticalOptions="Fill" x:Name="MainGrid">
+        <ScrollView Orientation="Vertical" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Grid Margin="24,21,24,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="1" Source="logoaxit" HorizontalOptions="Center"></Image>
+                <Label Text="Pases"
+                       Style="{StaticResource Title2}" Grid.Row="2"></Label>
+                <HorizontalStackLayout Grid.Row="3">
+                    <Button Margin="10,8,10,8"
+                    Text="Invitados"
+                    Style="{StaticResource Btn-Primary}"
+                    Command="{Binding RegistrarCommand}" VerticalOptions="End"></Button>
+                    <Button Margin="10,8,10,8"
+                    Text="Salida"
+                    Style="{StaticResource Btn-Primary-300}"
+                    Command="{Binding RegistrarCommand}" VerticalOptions="End"></Button>
+                </HorizontalStackLayout>
+                <StackLayout Grid.Row="4">
+                    <controls:ImageWithOverlay ImagePath="background.png" OverlayText="Incidentes casa club y sus áreas comunes." OverlayTextSubtitle="Horario de atención de 8:00 am a 8:00 pm"/>
+                </StackLayout>
+                <CarouselView Grid.Row="5" Margin="10,10,0,10">
+                    <CarouselView.ItemsSource>
+                        <x:Array Type="{x:Type controls:ImageWithOverlay}">
+                            <controls:ImageWithOverlay ImagePath="puerto.png" OverlayText="Áreas" />
+                            <controls:ImageWithOverlay ImagePath="pizarron.png" OverlayText="Mis reservaciones" />
+                        </x:Array>
+                    </CarouselView.ItemsSource>
+
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <controls:ImageWithOverlay ImagePath="{Binding ImagePat}" OverlayText="{Binding OverlayText}" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <Border Grid.Row="6" 
+                            BackgroundColor="{DynamicResource DefaultPageBackground}"
+                            Stroke="{StaticResource DefaultEntryBackground}"
+                            Padding="20"
+                            Margin="0,0,0,0"
+                            IsVisible="true">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15,15,15,15"></RoundRectangle>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    Stroke="{DynamicResource Gray100}"
+                                    StrokeThickness="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="15,15,15,15"></RoundRectangle>
+                            </Border.StrokeShape>
+                            <Label FontFamily="CustomIcon"
+                                   Text="{x:Static helpers:CustomIconsFont.icon_user}"
+                                   TextColor="White"
+                                   FontSize="25"
+                                   Margin="10"></Label>
+                        </Border>
+                        <Label Grid.Column="1"
+                           Text="Registro del Personal"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                           VerticalTextAlignment="Center"
+                           Margin="15,0,0,0"
+                               Style="{StaticResource Header5}"
+                               FontSize="14"></Label>
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PrestamoCommand}"/>
+                    </Border.GestureRecognizers>
+                </Border>
+                <Border Grid.Row="7" 
+                            BackgroundColor="{DynamicResource DefaultPageBackground}"
+                            Stroke="{StaticResource DefaultEntryBackground}"
+                            Padding="20"
+                            Margin="0,0,0,0"
+                            IsVisible="true">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15,15,15,15"></RoundRectangle>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    Stroke="{DynamicResource Gray100}"
+                                    StrokeThickness="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="15,15,15,15"></RoundRectangle>
+                            </Border.StrokeShape>
+                            <Label FontFamily="CustomIcon"
+                                   Text="{x:Static helpers:CustomIconsFont.icon_user}"
+                                   TextColor="White"
+                                   FontSize="25"
+                                   Margin="10"></Label>
+                        </Border>
+                        <Label Grid.Column="1"
+                           Text="Registro de Mascotas"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                           VerticalTextAlignment="Center"
+                           Margin="15,0,0,0"
+                               Style="{StaticResource Header5}"
+                               FontSize="14"></Label>
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PrestamoCommand}"/>
+                    </Border.GestureRecognizers>
+                </Border>
+                <Border Grid.Row="8" 
+                            BackgroundColor="{DynamicResource DefaultPageBackground}"
+                            Stroke="{StaticResource DefaultEntryBackground}"
+                            Padding="20"
+                            Margin="0,0,0,0"
+                            IsVisible="true">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15,15,15,15"></RoundRectangle>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    Stroke="{DynamicResource Gray100}"
+                                    StrokeThickness="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="15,15,15,15"></RoundRectangle>
+                            </Border.StrokeShape>
+                            <Label FontFamily="CustomIcon"
+                                   Text="{x:Static helpers:CustomIconsFont.icon_user}"
+                                   TextColor="White"
+                                   FontSize="25"
+                                   Margin="10"></Label>
+                        </Border>
+                        <Label Grid.Column="1"
+                           Text="Registro del Objetos"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                           VerticalTextAlignment="Center"
+                           Margin="15,0,0,0"
+                               Style="{StaticResource Header5}"
+                               FontSize="14"></Label>
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PrestamoCommand}"/>
+                    </Border.GestureRecognizers>
+                </Border>
+                <Button Grid.Row="9"
+                    Margin="0,28,0,28"
+                    Text="Emergencia del club"
+                    Style="{StaticResource Btn-Cancel}"
+                    Command="{Binding RegistrarCommand}" VerticalOptions="End"></Button>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

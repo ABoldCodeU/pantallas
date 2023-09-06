@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AxitHome.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AxitHome"
+    xmlns:views="clr-namespace:AxitHome.Views.Pages"
+    xmlns:notif="clr-namespace:AxitHome.Views.Pages.Notifications"
+    xmlns:incid="clr-namespace:AxitHome.Views.Pages.Incident"
+    xmlns:helpers="clr-namespace:AxitHome.Helpers"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent>
+        <views:RestaurantesPage></views:RestaurantesPage>
+    </ShellContent>
+    <!-- LoginPage -->
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage"/>
+
+    <!-- RestaurantesPage -->
+    <ShellContent
+    Title="Restaurantes"
+    ContentTemplate="{DataTemplate views:RestaurantesPage}"
+    Route="RestaurantesPage"/>
+
+
+    <!-- PetRegistrationPage -->
+    <ShellContent
+    Title="Registro de Mascota"
+    ContentTemplate="{DataTemplate views:PetRegistrationPage}"
+    Route="PetRegistrationPage"/>
+
+
+    <!-- MascotasRegistradasPage -->
+    <ShellContent
+        Title="Mascotas Registradas"
+        ContentTemplate="{DataTemplate views:MascotasRegistradasPage}"
+        Route="MascotasRegistradasPage"/>
+    <TabBar Route="Main" x:Name="TabbBar" >
+        <Tab FlyoutItemIsVisible="False"
+             Shell.TabBarBackgroundColor="{OnPlatform iOS={AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}, Android={AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}}"
+             Shell.TabBarTitleColor="{DynamicResource Primary500}"
+             Shell.TabBarUnselectedColor="{DynamicResource Gray200}" Route="Inicio">
+            <Tab.Icon>
+                <FontImageSource  Size="50"  Glyph="{x:Static helpers:CustomIconsFont.icon_home}" FontFamily="CustomIcon" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}"></ShellContent>
+        </Tab>
+        <Tab 
+             Shell.TabBarBackgroundColor="{OnPlatform iOS={AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}, Android={AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}}"
+             Shell.TabBarTitleColor="{DynamicResource Primary500}"
+             Shell.TabBarUnselectedColor="{DynamicResource Gray400}"  Route="Membresia">
+            <Tab.Icon>
+                <FontImageSource Size="50" Glyph="{x:Static helpers:CustomIconsFont.icon_notify}" FontFamily="CustomIcon"/>
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate notif:Notifications}"></ShellContent>
+        </Tab>
+        <Tab 
+             Shell.TabBarBackgroundColor="{OnPlatform iOS={AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}, Android={AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}}"
+             Shell.TabBarTitleColor="{DynamicResource Primary500}"
+             Shell.TabBarUnselectedColor="{DynamicResource Gray400}" Route="Perfil">
+            <Tab.Icon>
+                <FontImageSource Size="50" Glyph="{x:Static helpers:CustomIconsFont.icon_user}" FontFamily="CustomIcon"/>
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate incid:NewIncident}"></ShellContent>
+        </Tab>
+    </TabBar>
+</Shell>

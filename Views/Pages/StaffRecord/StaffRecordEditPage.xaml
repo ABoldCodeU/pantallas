@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AxitHome.Views.Pages.StaffRecord.StaffRecordEditPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StaffRecordEdit"
+    BackgroundColor="{StaticResource DefaultEntryBackground}"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False">
+    <Grid
+        x:Name="MainGrid"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
+        <ScrollView>
+            <Grid Margin="20,20,20,20" RowDefinitions="*,10*">
+                <Grid ColumnDefinitions="*,8*,*">
+                    <Button
+                        Padding="0"
+                        FontFamily="FontAwesome"
+                        FontSize="14"
+                        HeightRequest="30"
+                        Style="{StaticResource Btn-Primary}"
+                        Text="&#xf053;"
+                        WidthRequest="30" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Registrar Personal"
+                        VerticalOptions="Center" />
+                </Grid>
+                <VerticalStackLayout Grid.Row="1" Margin="10">
+                    <Border
+                        Margin="10,10,10,10"
+                        HeightRequest="100"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill"
+                        WidthRequest="100">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="60" />
+                        </Border.StrokeShape>
+                        <Image
+                            BackgroundColor="LightGray"
+                            HeightRequest="100"
+                            HorizontalOptions="Fill"
+                            Source="dotnet_bot"
+                            VerticalOptions="Fill"
+                            WidthRequest="100" />
+                    </Border>
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Nombre"
+                        TextColor="Black" />
+                    <Border
+                        BackgroundColor="{StaticResource Gray100}"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            Margin="10,20"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Adam Smith"
+                            TextColor="Gray" />
+                    </Border>
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Tipo de personal"
+                        TextColor="Black" />
+                    <Border
+                        BackgroundColor="{StaticResource Gray100}"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            Margin="10,20"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Limpieza"
+                            TextColor="Gray" />
+                    </Border>
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Observaciones"
+                        TextColor="Black" />
+                    <Border
+                        BackgroundColor="{StaticResource Gray100}"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            Margin="10,20"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Adam Smith"
+                            TextColor="Gray" />
+                    </Border>
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Foto de identificación oficial"
+                        TextColor="Black" />
+                    <Button
+                        Margin="10,15,10,15"
+                        FontFamily="FontAwesome"
+                        FontSize="20"
+                        HeightRequest="60"
+                        Style="{StaticResource Btn-Primary-300}"
+                        Text="&#xf030;"
+                        TextColor="White" />
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Foto de comprobante de domicilio"
+                        TextColor="Black" />
+                    <Button
+                        Margin="10,15,10,15"
+                        FontFamily="FontAwesome"
+                        FontSize="20"
+                        HeightRequest="60"
+                        Style="{StaticResource Btn-Primary-300}"
+                        Text="&#xf030;"
+                        TextColor="White" />
+                    <Grid ColumnDefinitions="4*,*">
+                        <Label Margin="20" Text="Acepto lo estipulado en la Carta Responsiva" />
+                        <Border
+                            Grid.Column="1"
+                            BackgroundColor="Blue"
+                            HeightRequest="30"
+                            HorizontalOptions="Center"
+                            Stroke="Transparent"
+                            VerticalOptions="Center">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <Switch BackgroundColor="Transparent" />
+                        </Border>
+                    </Grid>
+                    <Button
+                        Margin="10,15,10,15"
+                        FontSize="15"
+                        HeightRequest="60"
+                        Style="{StaticResource Btn-Primary}"
+                        Text="Guardar" />
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

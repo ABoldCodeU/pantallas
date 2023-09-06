@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AxitHome.Views.Pages.Reservaciones.ReservacionPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:AxitHome.Views.Controls"
+    xmlns:helpers="clr-namespace:AxitHome.Helpers"
+    Title="ReservacionPage"
+    BackgroundColor="{StaticResource DefaultEntryBackground}"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False">
+    <Grid
+        x:Name="MainGrid"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
+        <ScrollView>
+            <Grid Margin="20,20,20,20" RowDefinitions="*,10*">
+                <Grid Grid.Row="0" ColumnDefinitions="*,6*,*">
+                    <Button
+                        Padding="0"
+                        CornerRadius="40"
+                        FontFamily="FontAwesome"
+                        FontSize="18"
+                        HeightRequest="40"
+                        Style="{StaticResource Btn-Primary}"
+                        Text="&#xf053;"
+                        WidthRequest="40" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Nueva Reservación"
+                        VerticalOptions="Center" />
+                </Grid>
+                <VerticalStackLayout Grid.Row="1">
+                    <Label
+                        Margin="10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Zona" />
+                    <controls:OutlinedEntry
+                        Margin="10,0,10,10"
+                        Keyboard="Text"
+                        Placeholder="Club de golf bosques"
+                        Style="{StaticResource FormControl}" />
+                    <Label
+                        Margin="10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Área" />
+                    <controls:OutlinedEntry
+                        Margin="10,0,10,10"
+                        Keyboard="Text"
+                        Placeholder="Seleccione su área"
+                        Style="{StaticResource FormControl}" />
+                    <Grid ColumnDefinitions="3*,*,*,*">
+                        <Label
+                            Margin="10"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Número de personas" />
+                        <Button
+                            Grid.Column="1"
+                            Padding="0"
+                            CornerRadius="40"
+                            FontFamily="FontAwesome"
+                            FontSize="24"
+                            HeightRequest="40"
+                            Style="{StaticResource Btn-Primary}"
+                            Text="-"
+                            WidthRequest="40" />
+                        <Label
+                            Grid.Column="2"
+                            Margin="10"
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalTextAlignment="Center"
+                            Text="2"
+                            VerticalTextAlignment="Center" />
+                        <Button
+                            Grid.Column="3"
+                            Padding="0"
+                            CornerRadius="40"
+                            FontFamily="FontAwesome"
+                            FontSize="24"
+                            HeightRequest="40"
+                            Style="{StaticResource Btn-Primary}"
+                            Text="+"
+                            WidthRequest="40" />
+                    </Grid>
+                    <Label
+                        Margin="10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Horario" />
+                    <Button
+                        Margin="10,0,10,0"
+                        Command="{Binding AccederCommand}"
+                        Style="{StaticResource Btn-Primary-300}"
+                        Text="Seleccionar horarios" />
+                    <Label
+                        Margin="10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Observaciones" />
+                    <controls:OutlinedEntry
+                        Margin="10,10,10,10"
+                        Keyboard="Text"
+                        Placeholder="Observaciones"
+                        Style="{StaticResource FormControl}" />
+                    <Label
+                        Margin="10"
+                        FontAttributes="Bold"
+                        FontSize="12"
+                        HorizontalTextAlignment="Center"
+                        Text="En reservaciones, se respetará máximo 30 minutos" />
+                    <Button
+                        Margin="10,28,10,22"
+                        Style="{StaticResource Btn-Primary}"
+                        Text="Guardar Reservación" />
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+        <Grid
+            BackgroundColor="#CC222222"
+            HorizontalOptions="Fill"
+            IsVisible="false"
+            RowDefinitions="*,*,*"
+            VerticalOptions="Fill">
+            <Border
+                Grid.Row="1"
+                Margin="20,0"
+                BackgroundColor="{StaticResource DefaultEntryBackground}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20" />
+                </Border.StrokeShape>
+                <Grid
+                    HorizontalOptions="Fill"
+                    RowDefinitions="*,*,*"
+                    VerticalOptions="Fill">
+                    <Label
+                        Margin="0,20,0,20"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        HorizontalOptions="Center"
+                        Text="Selecciona un área"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <controls:OutlinedEntry
+                        Grid.Row="1"
+                        Margin="30,0,30,0"
+                        Keyboard="Text"
+                        Placeholder="Seleccione su área"
+                        Style="{StaticResource FormControl}" />
+                    <Grid
+                        Grid.Row="2"
+                        Margin="30,20"
+                        ColumnDefinitions="*,*">
+                        <Button
+                            Grid.Column="0"
+                            Margin="0,0,10,0"
+                            BackgroundColor="{StaticResource Blue100Accent}"
+                            CornerRadius="14"
+                            Text="Cancelar" />
+                        <Button
+                            Grid.Column="1"
+                            Margin="10,0,0,0"
+                            CornerRadius="14"
+                            Text="Ok" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

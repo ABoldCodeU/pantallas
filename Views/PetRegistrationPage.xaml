@@ -1,0 +1,268 @@
+<ContentPage
+    x:Class="AxitHome.Views.Pages.PetRegistrationPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#F5F9FF"
+    NavigationPage.HasBackButton="False"
+    NavigationPage.HasNavigationBar="False"
+    Shell.NavBarIsVisible="false">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,20,0,0" />
+            <On Platform="Android" Value="10,20,20,10" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Navegacion-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Boton de regreso -->
+            <Button
+                x:Name="BackButton"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                FontFamily="FontAwesomeSolid"
+                FontSize="30"
+                Text=""
+                TextColor="#000080"
+                WidthRequest="60"
+                HeightRequest="60"
+                HorizontalOptions="Start"
+                VerticalOptions="Center" />
+            <!-- titulo -->
+            <Label 
+                Grid.Column="1"
+                Text="Registro de Mascota" 
+                FontSize="24" 
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand" />
+        </Grid>
+
+        <!-- Contenido -->
+        <Grid Grid.Row="1" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Campos -->
+            <!-- Imagen -->
+            <Grid HorizontalOptions="CenterAndExpand">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                        Margin="0,0,0,0"
+                        BackgroundColor="Black"
+                        BorderColor="Transparent"
+                        CornerRadius="100"
+                        HeightRequest="80"
+                    WidthRequest="80">
+                    <Image
+                            x:Name="imageI"
+                            Margin="0"
+                            Aspect="AspectFill"
+                            HeightRequest="80"
+                            HorizontalOptions="CenterAndExpand"
+                            Source="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
+                            WidthRequest="80" />
+                </Frame>
+                <Button
+                        Grid.Column="1"
+                        Margin="-35,0,0,0"
+                        Padding="0"
+                        BackgroundColor="Transparent"
+                        TextColor="#000080"
+                        FontFamily="FontAwesome"
+                        FontSize="28"
+                        Text=""
+                        VerticalOptions="End" />
+
+            </Grid>
+            <!-- Nombre -->
+            <Label Grid.Row="2" Margin="10,0,0,0" Text="Nombre" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold" />
+            <Border Grid.Row="3"
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                <Entry
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Text"
+                        Placeholder="Texto"
+                        PlaceholderColor="Gray"
+                        ReturnType="Search"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+            </Border>
+
+            <!-- Especie -->
+            <Label Grid.Row="4" Margin="10,5,0,0" Text="Especie" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold" />
+            <Border Grid.Row="5"
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                <Entry
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Text"
+                        Placeholder="Texto"
+                        PlaceholderColor="Gray"
+                        ReturnType="Search"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+            </Border>
+
+            <!-- Edad -->
+            <Label Grid.Row="6" Margin="10,5,0,0" Text="Edad(años)" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold" />
+            <Border Grid.Row="7"
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                <Entry
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Text"
+                        Placeholder="Texto"
+                        PlaceholderColor="Gray"
+                        ReturnType="Search"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+            </Border>
+            <!-- Raza -->
+            <Label Grid.Row="8" Margin="10,5,0,0" Text="Raza" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold" />
+            <Border Grid.Row="9"
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                <Entry
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Text"
+                        Placeholder="Texto"
+                        PlaceholderColor="Gray"
+                        ReturnType="Search"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+            </Border>
+            <!-- Vacunacion -->
+            <Label Grid.Row="10" Margin="10,5,0,0" Text="Vacunación" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold" />
+            <Border Grid.Row="11"
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                <Entry
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Text"
+                        Placeholder="Texto"
+                        PlaceholderColor="Gray"
+                        ReturnType="Search"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+            </Border>
+            <!-- Observaciones -->
+            <Label Grid.Row="12" Margin="10,5,0,0" Text="Observaciones" TextColor="{StaticResource SecondaryTextColor}" FontAttributes="Bold" />
+            <Border Grid.Row="13"
+                BackgroundColor="White"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                StrokeThickness="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15" />
+                </Border.StrokeShape>
+                <Entry
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Text"
+                        Placeholder="Texto"
+                        PlaceholderColor="Gray"
+                        ReturnType="Search"
+                        TextColor="Gray"
+                        VerticalOptions="Center" />
+            </Border>
+
+            <!-- Tomar foto o seleccionar -->
+            <Button
+            Grid.Row="14"
+            Margin="5,20,5,0"
+             BackgroundColor="LightSkyBlue"
+            FontFamily="FontAwesome"
+                FontSize="25"
+                Text="" 
+            TextColor="White" />
+
+            <!-- Confirmar cambios -->
+            <Button
+            Grid.Row="15"
+                
+            Margin="5,20,5,0"
+            Text="Guardar" 
+            BackgroundColor="#000080" 
+            TextColor="White" />
+        </Grid>
+
+        
+    </Grid>
+</ContentPage>
+

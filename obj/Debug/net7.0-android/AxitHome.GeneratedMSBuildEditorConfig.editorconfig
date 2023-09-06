@@ -1,0 +1,177 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = AxitHome
+build_property.ProjectDir = C:\Users\kenji\OneDrive\Documentos\Trabajo\zion\Septiembre_23\Martes_5\AxitHomeMaui\AxitHome\
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Controls/ImageWithOverlay.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Controls.ImageWithOverlay.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Controls\ImageWithOverlay.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Controls\ImageWithOverlay.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Controls/OutlinedEntry.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Controls.OutlinedEntry.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Controls\OutlinedEntry.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Controls\OutlinedEntry.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/MascotasRegistradasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.MascotasRegistradasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MascotasRegistradasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MascotasRegistradasPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/CommonViews/Schedule.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.CommonViews.Schedule.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\CommonViews\Schedule.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\CommonViews\Schedule.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/CreateAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.CreateAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\CreateAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\CreateAccountPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\HomePage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/Incident/NewIncident.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.Incident.NewIncident.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\Incident\NewIncident.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\Incident\NewIncident.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\LoginPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/Notifications/Notifications.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.Notifications.Notifications.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\Notifications\Notifications.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\Notifications\Notifications.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/CambiarContraseaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.CambiarContraseaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\CambiarContraseaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\CambiarContraseaPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/CuentasAsociadasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.CuentasAsociadasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\CuentasAsociadasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\CuentasAsociadasPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/DatosPersonalesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.DatosPersonalesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\DatosPersonalesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\DatosPersonalesPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/MisZonasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.MisZonasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\MisZonasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\MisZonasPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/NotificacionesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.NotificacionesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\NotificacionesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\NotificacionesPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/OTPVerificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.OTPVerificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\OTPVerificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\OTPVerificationPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\ProfilePage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/ProfilePages/SuccefullyPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.ProfilePages.SuccefullyPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\ProfilePages\SuccefullyPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\ProfilePages\SuccefullyPasswordPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/Reservaciones/ReservacionesListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.Reservaciones.ReservacionesListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\Reservaciones\ReservacionesListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\Reservaciones\ReservacionesListPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/Reservaciones/ReservacionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.Reservaciones.ReservacionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\Reservaciones\ReservacionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\Reservaciones\ReservacionPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/StaffRecord/StaffRecordEditPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.StaffRecord.StaffRecordEditPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\StaffRecord\StaffRecordEditPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\StaffRecord\StaffRecordEditPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/Pages/StaffRecord/StaffRecordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.Pages.StaffRecord.StaffRecordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Pages\StaffRecord\StaffRecordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Pages\StaffRecord\StaffRecordPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/PetRegistrationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.PetRegistrationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PetRegistrationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PetRegistrationPage.xaml
+
+[C:/Users/kenji/OneDrive/Documentos/Trabajo/zion/Septiembre_23/Martes_5/AxitHomeMaui/AxitHome/Views/RestaurantesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AxitHome.Views.RestaurantesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RestaurantesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RestaurantesPage.xaml

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AxitHome.Views.Pages.Incident.NewIncident"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="NewIncident">
+    <Grid
+        x:Name="MainGrid"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
+        <ScrollView>
+            <Grid Margin="20,20,20,20" RowDefinitions="*,10*">
+                <Grid ColumnDefinitions="*,8*,*">
+                    <Button
+                        Padding="0"
+                        FontFamily="FontAwesome"
+                        FontSize="14"
+                        HeightRequest="30"
+                        Style="{StaticResource Btn-Primary}"
+                        Text="&#xf053;"
+                        WidthRequest="30" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Nuevo Incidente"
+                        VerticalOptions="Center" />
+                </Grid>
+                <VerticalStackLayout Grid.Row="1">
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Zona"
+                        TextColor="Black" />
+                    <Border
+                        BackgroundColor="{StaticResource DefaultEntryBackground}"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            Margin="10,20"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Club de golf Bosques"
+                            TextColor="LightGray" />
+                    </Border>
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Área"
+                        TextColor="Black" />
+                    <Border
+                        BackgroundColor="{StaticResource DefaultEntryBackground}"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            Margin="10,20"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Seleccione su área"
+                            TextColor="LightGray" />
+                    </Border>
+                    <Label
+                        Margin="10,10,0,10"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Text="Descripción"
+                        TextColor="Black" />
+                    <Border
+                        BackgroundColor="{StaticResource DefaultEntryBackground}"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Label
+                            Margin="10,20"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Observaciones"
+                            TextColor="LightGray" />
+                    </Border>
+                    <Button
+                        Margin="10"
+                        CornerRadius="20"
+                        FontFamily="FontAwesome"
+                        FontSize="20"
+                        HeightRequest="100"
+                        Text="&#xf030;" />
+                    <Button
+                        Margin="10"
+                        HeightRequest="60"
+                        Style="{StaticResource Btn-Primary-300}"
+                        Text="Guardar incidente" />
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+        <Grid
+            BackgroundColor="#CC222222"
+            HorizontalOptions="Fill"
+            IsVisible="False"
+            RowDefinitions="*,*,*"
+            VerticalOptions="Fill">
+            <Border
+                Grid.Row="1"
+                Margin="30,0"
+                BackgroundColor="{StaticResource DefaultEntryBackground}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50" />
+                </Border.StrokeShape>
+                <Grid
+                    Grid.Column="1"
+                    HorizontalOptions="Fill"
+                    RowDefinitions="*,*,*"
+                    VerticalOptions="Start">
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,50,0,10"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Correcto"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Margin="0,20"
+                        FontAttributes="Bold"
+                        FontSize="12"
+                        HorizontalOptions="Center"
+                        Text="El incidente se guardó exitosamente"
+                        TextColor="Gray" />
+                    <Button
+                        Grid.Row="2"
+                        Margin="100,20"
+                        Text="Ok" />
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

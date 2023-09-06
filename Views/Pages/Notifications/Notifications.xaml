@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AxitHome.Views.Pages.Notifications.Notifications"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:AxitHome.Views.Controls"
+    xmlns:helpers="clr-namespace:AxitHome.Helpers"
+    Title="Notifications"
+    BackgroundColor="{StaticResource DefaultEntryBackground}"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False">
+    <Grid
+        x:Name="MainGrid"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
+        <ScrollView>
+            <Grid Margin="20,20,20,20" RowDefinitions="*,10*">
+                <Grid ColumnDefinitions="*,8*,*">
+                    <Button
+                        Padding="0"
+                        FontFamily="FontAwesome"
+                        FontSize="14"
+                        HeightRequest="30"
+                        Style="{StaticResource Btn-Primary}"
+                        Text="&#xf053;"
+                        WidthRequest="30" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Notificaciones"
+                        VerticalOptions="Center" />
+                </Grid>
+                <VerticalStackLayout Grid.Row="1">
+                    <Border
+                        Margin="0,10,0,10"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,3*">
+                            <Border
+                                Margin="10,10,10,10"
+                                BackgroundColor="{StaticResource Blue100Accent}"
+                                HorizontalOptions="Fill"
+                                Stroke="Transparent"
+                                VerticalOptions="Fill">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Label
+                                    Margin="0,20"
+                                    FontFamily="FontAwesome"
+                                    FontSize="30"
+                                    HorizontalOptions="Center"
+                                    Text="&#xf0f3;"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                            </Border>
+                            <VerticalStackLayout
+                                Grid.Column="1"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="14"
+                                    HorizontalOptions="Start"
+                                    Text="Pase de Invitado"
+                                    TextColor="Black"
+                                    VerticalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    HorizontalOptions="Start"
+                                    Text="01/08/2023 11:00:00"
+                                    TextColor="LightGray"
+                                    VerticalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    HorizontalOptions="Start"
+                                    Text="Tu invitado John Doe ha llegado."
+                                    TextColor="Gray"
+                                    VerticalOptions="Fill" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                    <Border
+                        Margin="0,10,0,10"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,3*">
+                            <Border
+                                Margin="10,10,10,10"
+                                BackgroundColor="{StaticResource Blue100Accent}"
+                                HorizontalOptions="Fill"
+                                Stroke="Transparent"
+                                VerticalOptions="Fill">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Label
+                                    Margin="0,20"
+                                    FontFamily="FontAwesome"
+                                    FontSize="30"
+                                    HorizontalOptions="Center"
+                                    Text="&#xf0f3;"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                            </Border>
+                            <VerticalStackLayout
+                                Grid.Column="1"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="14"
+                                    HorizontalOptions="Start"
+                                    Text="Pase de Invitado"
+                                    TextColor="Black"
+                                    VerticalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    HorizontalOptions="Start"
+                                    Text="01/08/2023 11:00:00"
+                                    TextColor="LightGray"
+                                    VerticalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    HorizontalOptions="Start"
+                                    Text="Tu invitado John Doe ha llegado."
+                                    TextColor="Gray"
+                                    VerticalOptions="Fill" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+        <Grid
+            BackgroundColor="#CC222222"
+            HorizontalOptions="Fill"
+            IsVisible="False"
+            RowDefinitions="*,*,1.5*"
+            VerticalOptions="Fill">
+            <Border
+                Grid.Row="2"
+                Margin="0"
+                BackgroundColor="{StaticResource DefaultEntryBackground}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,0,0" />
+                </Border.StrokeShape>
+                <VerticalStackLayout
+                    Grid.Column="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start">
+                    <Label
+                        Margin="0,50,0,10"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        Text="Borrar notificación"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Border
+                        Margin="30,20"
+                        HorizontalOptions="Fill"
+                        Stroke="lightgray" />
+                    <Border
+                        Margin="20,0,20,0"
+                        HorizontalOptions="Fill"
+                        Stroke="Transparent"
+                        VerticalOptions="Fill">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,3*">
+                            <Border
+                                Margin="10,10,10,10"
+                                BackgroundColor="{StaticResource Blue100Accent}"
+                                HorizontalOptions="Fill"
+                                Stroke="Transparent"
+                                VerticalOptions="Fill">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Label
+                                    Margin="0,20"
+                                    FontFamily="FontAwesome"
+                                    FontSize="30"
+                                    HorizontalOptions="Center"
+                                    Text="&#xf0f3;"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                            </Border>
+                            <VerticalStackLayout
+                                Grid.Column="1"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="14"
+                                    HorizontalOptions="Start"
+                                    Text="Pase de Invitado"
+                                    TextColor="Black"
+                                    VerticalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    HorizontalOptions="Start"
+                                    Text="01/08/2023 11:00:00"
+                                    TextColor="LightGray"
+                                    VerticalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    HorizontalOptions="Start"
+                                    Text="Tu invitado John Doe ha llegado."
+                                    TextColor="Gray"
+                                    VerticalOptions="Fill" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                    <Grid Margin="30,10" ColumnDefinitions="*,*">
+                        <Button
+                            Grid.Column="0"
+                            Margin="10"
+                            BackgroundColor="{StaticResource Blue100Accent}"
+                            Text="Cancelar" />
+                        <Button
+                            Grid.Column="1"
+                            Margin="10"
+                            Text="Sí, borrar" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AxitHome.Views.Controls.ImageWithOverlay"
+             x:Name="Root">
+    <AbsoluteLayout>
+        <Frame  CornerRadius="55" Padding="0">
+            <Image Aspect="Fill" 
+                   Source="{Binding Source={x:Reference Root}, Path=ImagePath}" 
+                   HeightRequest="250"/>
+
+        </Frame>
+        <Frame BackgroundColor="#99000000"
+                   Padding="10"
+                   CornerRadius="55"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   AbsoluteLayout.LayoutBounds="0.2, 0.9, 320, 100"
+               BorderColor="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+               Text="{Binding Source={x:Reference Root}, Path=OverlayText}" 
+               TextColor="White" 
+               Margin="10,20,0,10"
+               FontAttributes="Bold"/>
+
+                <Label Grid.Row="1"
+               Text="{Binding Source={x:Reference Root}, Path=OverlayTextSubtitle}" 
+               TextColor="White" 
+                       FontSize="12"/>
+
+            </Grid>
+
+        </Frame>
+    </AbsoluteLayout>
+</Grid>
